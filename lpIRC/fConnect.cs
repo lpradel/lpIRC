@@ -21,7 +21,7 @@ namespace lpIRC
             InitializeComponent();
 
             // set window-title
-            this.Text = "Verbinden...";
+            this.Text = "Connect...";
 
             // check if a profile exists
             if (Options.OptionsExist())
@@ -74,27 +74,27 @@ namespace lpIRC
             // check input
             if (address == null || address.Trim() == "")
             {
-                ErrorBox("Ungültige Server-Adresse!");
+                ErrorBox("Invalid server address!");
                 return;
             }
             if (port == null || port.Trim() == "")
             {
-                ErrorBox("Ungültige Port-Nummer!");
+                ErrorBox("Invalid port number!");
                 return;
             }
             if (username == null || username.Trim() == "")
             {
-                ErrorBox("Ungültiger Benutzername!");
+                ErrorBox("Invalid username!");
                 return;
             }
             if (realname == null || realname.Trim() == "")
             {
-                ErrorBox("Ungültiger echter Name!");
+                ErrorBox("Invalid real name!");
                 return;
             }
             if (nicknames == null || nicknames.Trim() == "")
             {
-                ErrorBox("Ungültige Nicknames!");
+                ErrorBox("Invalid nickname!");
                 return;
             }
 
@@ -141,6 +141,11 @@ namespace lpIRC
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Exclamation,
                             MessageBoxDefaultButton.Button1);
+        }
+
+        private void fConnect_Load(object sender, EventArgs e)
+        {
+
         }
 
     }

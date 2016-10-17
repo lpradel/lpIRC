@@ -44,7 +44,7 @@ namespace lpIRC
             fIRC wndIRC = new fIRC(server, login);
             wndIRC.MdiParent = this;
             wndIRC.Show();
-             * */
+            */
         }
 
         /// <summary>
@@ -54,6 +54,11 @@ namespace lpIRC
         private string Version()
         {
             return System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -53,7 +53,7 @@
             this.fConnectBtnConnect.Name = "fConnectBtnConnect";
             this.fConnectBtnConnect.Size = new System.Drawing.Size(140, 28);
             this.fConnectBtnConnect.TabIndex = 0;
-            this.fConnectBtnConnect.Text = "&Verbinden";
+            this.fConnectBtnConnect.Text = "&Connect";
             this.fConnectBtnConnect.UseVisualStyleBackColor = true;
             this.fConnectBtnConnect.Click += new System.EventHandler(this.fConnectBtnConnect_Click);
             // 
@@ -62,18 +62,18 @@
             this.fConnectLblAddress.AutoSize = true;
             this.fConnectLblAddress.Location = new System.Drawing.Point(6, 25);
             this.fConnectLblAddress.Name = "fConnectLblAddress";
-            this.fConnectLblAddress.Size = new System.Drawing.Size(82, 13);
+            this.fConnectLblAddress.Size = new System.Drawing.Size(81, 13);
             this.fConnectLblAddress.TabIndex = 1;
-            this.fConnectLblAddress.Text = "Server-Adresse:";
+            this.fConnectLblAddress.Text = "Server address:";
             // 
             // fConnectLblPort
             // 
             this.fConnectLblPort.AutoSize = true;
             this.fConnectLblPort.Location = new System.Drawing.Point(17, 54);
             this.fConnectLblPort.Name = "fConnectLblPort";
-            this.fConnectLblPort.Size = new System.Drawing.Size(71, 13);
+            this.fConnectLblPort.Size = new System.Drawing.Size(67, 13);
             this.fConnectLblPort.TabIndex = 2;
-            this.fConnectLblPort.Text = "Port-Nummer:";
+            this.fConnectLblPort.Text = "Port number:";
             // 
             // fConnectBoxAddress
             // 
@@ -117,16 +117,16 @@
             this.fConnectGrpLogin.Size = new System.Drawing.Size(280, 153);
             this.fConnectGrpLogin.TabIndex = 6;
             this.fConnectGrpLogin.TabStop = false;
-            this.fConnectGrpLogin.Text = "Login-Daten";
+            this.fConnectGrpLogin.Text = "Login Credentials";
             // 
             // fConnectLblHint
             // 
             this.fConnectLblHint.AutoSize = true;
             this.fConnectLblHint.Location = new System.Drawing.Point(25, 125);
             this.fConnectLblHint.Name = "fConnectLblHint";
-            this.fConnectLblHint.Size = new System.Drawing.Size(236, 13);
+            this.fConnectLblHint.Size = new System.Drawing.Size(191, 13);
             this.fConnectLblHint.TabIndex = 11;
-            this.fConnectLblHint.Text = "Hinweis: Nicknames durch Leerzeichen trennen.";
+            this.fConnectLblHint.Text = "Hint: Separate nicknames with spaces.";
             // 
             // fConnectBoxNicknames
             // 
@@ -149,9 +149,9 @@
             this.fConnectLblUserName.AutoSize = true;
             this.fConnectLblUserName.Location = new System.Drawing.Point(25, 30);
             this.fConnectLblUserName.Name = "fConnectLblUserName";
-            this.fConnectLblUserName.Size = new System.Drawing.Size(63, 13);
+            this.fConnectLblUserName.Size = new System.Drawing.Size(58, 13);
             this.fConnectLblUserName.TabIndex = 5;
-            this.fConnectLblUserName.Text = "User-Name:";
+            this.fConnectLblUserName.Text = "Username:";
             // 
             // fConnectBoxRealName
             // 
@@ -172,18 +172,18 @@
             this.fConnectLblRealName.AutoSize = true;
             this.fConnectLblRealName.Location = new System.Drawing.Point(17, 59);
             this.fConnectLblRealName.Name = "fConnectLblRealName";
-            this.fConnectLblRealName.Size = new System.Drawing.Size(72, 13);
+            this.fConnectLblRealName.Size = new System.Drawing.Size(61, 13);
             this.fConnectLblRealName.TabIndex = 6;
-            this.fConnectLblRealName.Text = "Echter Name:";
+            this.fConnectLblRealName.Text = "Real name:";
             // 
             // fConnectCheckBoxData
             // 
             this.fConnectCheckBoxData.AutoSize = true;
             this.fConnectCheckBoxData.Location = new System.Drawing.Point(12, 278);
             this.fConnectCheckBoxData.Name = "fConnectCheckBoxData";
-            this.fConnectCheckBoxData.Size = new System.Drawing.Size(93, 17);
+            this.fConnectCheckBoxData.Size = new System.Drawing.Size(75, 17);
             this.fConnectCheckBoxData.TabIndex = 7;
-            this.fConnectCheckBoxData.Text = "Daten merken";
+            this.fConnectCheckBoxData.Text = "Save data";
             this.fConnectCheckBoxData.UseVisualStyleBackColor = true;
             // 
             // fConnect
@@ -201,6 +201,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fConnect";
+            this.Load += new System.EventHandler(this.fConnect_Load);
             this.fConnectGrpServer.ResumeLayout(false);
             this.fConnectGrpServer.PerformLayout();
             this.fConnectGrpLogin.ResumeLayout(false);

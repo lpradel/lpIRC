@@ -79,12 +79,12 @@ namespace lpIRC
         #region "IRCConnection-Event-Handlers"
         private void ConnectionConnected(object sender, EventArgs e)
         {
-            Log("Verbunden mit " + server.Address + "...", Color.DarkRed);
+            Log("Connected to " + server.Address + "...", Color.DarkRed);
         }
 
         private void ConnectionDisconnected(object sender, EventArgs e)
         {
-            Log("Verbindung zum Server getrennt!", Color.DarkRed);
+            Log("Disconnected from server!", Color.DarkRed);
         }
 
         private void ConnectionGotMessage(object sender, IRCConnection.MessageEventArgs e)
@@ -104,7 +104,7 @@ namespace lpIRC
 
         private void ConnectionNickChanged(object sender, EventArgs e)
         {
-            Log("Neuer Nickname ist: " + manager.Connection.Nickname, Color.DarkRed);
+            Log("Your new nickname is: " + manager.Connection.Nickname, Color.DarkRed);
         }
 
         private void ConnectionError(object sender, ClientSocket.ExceptionEventArgs e)
@@ -128,7 +128,7 @@ namespace lpIRC
             wndChannel.MdiParent = mdiParent;
             wndChannel.Show();
 
-            Log("Du hast den Channel" + e.Channel.ChannelName + " betreten!", Color.DarkRed);
+            Log("You have joined the " + e.Channel.ChannelName + " channel!", Color.DarkRed);
 
             // update channels-list
             if (!fIRCChannels.Items.Contains(e.Channel))
@@ -148,7 +148,7 @@ namespace lpIRC
             }
 
             fIRCChannels.Items.Remove(e.Channel);
-            Log("Du hast den Channel " + e.Channel.ChannelName + " verlassen!", Color.DarkRed);
+            Log("You have left the " + e.Channel.ChannelName + " channel!", Color.DarkRed);
         }
 
         private void ManagerKickedFromChannel(object sender, IRCManager.ChannelEventArgs e)
@@ -160,7 +160,7 @@ namespace lpIRC
             }
 
             fIRCChannels.Items.Remove(e.Channel);
-            Log("Du wurdest aus dem Channel " + e.Channel.ChannelName + " gekickt!", Color.DarkRed);
+            Log("You were kicked from the " + e.Channel.ChannelName + " channel!", Color.DarkRed);
         }
 
         private void ManagerGotPrivateMessage(object sender, IRCConnection.MessageEventArgs e)

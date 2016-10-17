@@ -58,14 +58,14 @@
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fMainMenuBtnClose});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(46, 20);
-            this.toolStripMenuItem1.Text = "&Datei";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(37, 20);
+            this.toolStripMenuItem1.Text = "&File";
             // 
             // fMainMenuBtnClose
             // 
             this.fMainMenuBtnClose.Name = "fMainMenuBtnClose";
             this.fMainMenuBtnClose.Size = new System.Drawing.Size(152, 22);
-            this.fMainMenuBtnClose.Text = "Beenden";
+            this.fMainMenuBtnClose.Text = "Exit";
             this.fMainMenuBtnClose.Click += new System.EventHandler(this.fMainMenuBtnClose_Click);
             // 
             // toolStripMenuItem2
@@ -74,26 +74,27 @@
             this.fMainMenuBtnNewCon});
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Size = new System.Drawing.Size(81, 20);
-            this.toolStripMenuItem2.Text = "&Verbindung";
+            this.toolStripMenuItem2.Text = "&Connection";
             // 
             // fMainMenuBtnNewCon
             // 
             this.fMainMenuBtnNewCon.Name = "fMainMenuBtnNewCon";
-            this.fMainMenuBtnNewCon.Size = new System.Drawing.Size(137, 22);
-            this.fMainMenuBtnNewCon.Text = "&Verbinden...";
+            this.fMainMenuBtnNewCon.Size = new System.Drawing.Size(152, 22);
+            this.fMainMenuBtnNewCon.Text = "&Connect...";
             this.fMainMenuBtnNewCon.Click += new System.EventHandler(this.fMainMenuBtnNewCon_Click);
             // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(57, 20);
-            this.toolStripMenuItem4.Text = "&Fenster";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(63, 20);
+            this.toolStripMenuItem4.Text = "&Window";
+            this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
             this.toolStripMenuItem3.Size = new System.Drawing.Size(44, 20);
-            this.toolStripMenuItem3.Text = "&Hilfe";
+            this.toolStripMenuItem3.Text = "&Help";
             // 
             // fMain
             // 
